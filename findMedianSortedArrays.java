@@ -44,15 +44,12 @@ public static void main(String[] args) {
         
         Arrays.sort(combine);        
        
-        if(combine.length%2==0) {
+       if(combine.length%2==0) {
         	int first = combine[combine.length/2 - 1];
         	int second = combine[combine.length/2];
-        	median = (double)(first+second)/2;
+        	return (double)(first+second)/2;
         }
         else {
-        	median = combine[combine.length/2];
-        }    
-       
-        return median;
-        
+        	return (double) combine[combine.length/2];
+        }  
     }
